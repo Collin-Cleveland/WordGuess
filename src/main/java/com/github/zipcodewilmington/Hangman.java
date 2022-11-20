@@ -12,7 +12,7 @@ import java.util.Scanner;
 public class Hangman {
 
     Scanner scan = new Scanner(System.in);
-    String[] wordsToGuess = {"pizza", "snowboard", "baseball", "sushi"};
+    String[] wordsToGuess = {"snowboard", "magenta", "antidisestablishmentarianism", "goose"};
     Character[] givenWord;
     Character[] displayWord;
     int playerGuesses;
@@ -26,6 +26,7 @@ public class Hangman {
     }
 
     public void runGame(){
+        System.out.println("Welcome to Word Guess! Take your best shot to guess the word.");
         gameSetUp();
         playerGuesses = 0;
 
